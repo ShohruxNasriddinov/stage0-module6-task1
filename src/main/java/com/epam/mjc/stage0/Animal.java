@@ -16,7 +16,9 @@ public class Animal {
         String s;
         if (hasFur) {
             s = "This animal is mostly " + color + ". It has "+numberOfPaws+" paws and a fur.";
-        }else {
+        } else if (numberOfPaws==1) {
+            s = "This animal is mostly "+color+". It has 1 paw and a fur.";
+        } else {
             s = "This animal is mostly " + color + ". It has "+numberOfPaws+" paws and no fur.";
         }
         return s;
