@@ -14,10 +14,10 @@ public class Animal {
 
     public String getDescription(){
         String s;
-        if (hasFur) {
-            s = "This animal is mostly " + color + ". It has "+numberOfPaws+" paws and a fur.";
-        } else if (numberOfPaws==1) {
+        if (numberOfPaws==1) {
             s = "This animal is mostly "+color+". It has 1 paw and a fur.";
+        } else if (hasFur) {
+            s = "This animal is mostly " + color + ". It has "+numberOfPaws+" paws and a fur.";
         } else {
             s = "This animal is mostly " + color + ". It has "+numberOfPaws+" paws and no fur.";
         }
